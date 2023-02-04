@@ -1,0 +1,17 @@
+body {
+    height: 300px;
+    width: 500px;
+}
+
+.col{
+    border-right-color: blueviolet;
+    border-right-width: 2px;
+}
+
+.input-group{
+    height: 100px;
+}
+
+#result{
+    background-color: red !important;
+}
