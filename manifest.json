@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Grammarly with ChatGPT",
+    "name": "Grammar with ChatGPT",
     "description": "Hope this works",
     "version": "1.0",
     "action": {
