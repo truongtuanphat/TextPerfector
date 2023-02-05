@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Grammar with ChatGPT",
+    "name": "TextPerfector",
     "description": "Fix the spelling mistakes, remove redundant characters and correct grammar. Powered by OpenAI. Developed by Phat Truong",
     "version": "1.0",
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "tp_logo.png"
+      "default_icon": "openai.png"
     }
 }

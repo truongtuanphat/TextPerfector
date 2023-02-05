@@ -1,4 +1,4 @@
-const openaiApiKey = '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';
+const openaiApiKey = 'openaiApiKey';
 const model = 'text-davinci-edit-001';
 const prompt = 'Bec4me d0ctor b3e hard';
 
@@ -19,7 +19,9 @@ async function getAnswer() {
       })
     });
     const answer = await response.json();
-    console.log(answer.choices[0].text);
+    const firstAnswer = answer.choices[0].text;
+    console.log(firstAnswer);
+    return firstAnswer;
   } catch (error) {
     console.error(error);
   }
