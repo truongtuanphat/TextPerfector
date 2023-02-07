@@ -1,12 +1,18 @@
-var input = document.getElementById("input");
+const input = document.getElementById("input");
+const output = document.getElementById("output");
 
 input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
-    displayAnswer();
+    event.preventDefault();
+    if (input.value == ""){
+      input.placeholder = "ENTER TEXT!!!!!!!!!!!!!";
+      return;
+    }
+    displayAnswer(input.value);
   }
 });
 
-async function displayAnswer() {
-  const answer = await getAnswer();
-  document.getElementById("output").innerHTML = answer;
+async function displayAnswer(prompt) {
+  const answer = await getAnswer(prompt);
+  output.innerHTML = answer;
 }

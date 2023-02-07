@@ -1,9 +1,8 @@
-const openaiApiKey = 'openaiApiKey';
+const openaiApiKey = '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';
 const model = 'text-davinci-edit-001';
-const prompt = 'Bec4me d0ctor b3e hard';
 
-async function getAnswer() {
-  console.log('Prompt: ' + prompt);
+async function getAnswer(input) {
+  console.log('Prompt: ' + input);
   try {
     const response = await fetch('https://api.openai.com/v1/edits', {
       method: 'POST',
@@ -14,7 +13,7 @@ async function getAnswer() {
       body: JSON.stringify({
         model: model,
         temperature: 0,
-        input: prompt,
+        input: input,
         instruction: "Fix the spelling mistakes, remove redundant characters and correct grammar"
       })
     });
